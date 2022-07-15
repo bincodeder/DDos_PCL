@@ -119,7 +119,7 @@ class MonitorThread(threading.Thread):
 				print "%d Requests Sent" % (request_counter)
 				previous=request_counter
 		if flag==3:
-			print "\n-- HULK Attack Finished --"
+			print "\n-- PCL Attack Finished --"
 
 #execute 
 if len(sys.argv) < 2:
