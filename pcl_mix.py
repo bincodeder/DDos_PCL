@@ -9,7 +9,7 @@ url=''
 host=''
 headers_useragents=[]
 headers_referers=[]
-request_counter=100
+request_counter=2000
 flag=0
 safe=0
 
