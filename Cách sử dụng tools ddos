@@ -7,7 +7,7 @@
  cd Download
  cd hulk-master
  Cuối cùng bạn chỉ cần gõ :
- python2 hulk_mix.py <url> hoặc python2 hulk.py <url>
+ python2 pcl_mix.py <url> hoặc python2 hulk.py <url>
   -----------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                      Công dụng của pcl_mix.py
  Tấn công network
